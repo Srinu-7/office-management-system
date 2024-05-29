@@ -1,4 +1,4 @@
-package com.example.OfficeManagementApp;
+package com.example.OfficeManagementApp.Model;
 
 public class Manager {
     private int id;
