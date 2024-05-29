@@ -25,4 +25,8 @@ public class employeeService {
    public Employee updateSalary(int empid, int salary) {
          return  ser.updateSalary(empid,salary);
    }
+
+   public Employee maxSalary() {
+      return ser.maxSalary();
+   }
 }

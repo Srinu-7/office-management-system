@@ -28,4 +28,16 @@ public class employeeReposotiry {
         curr.setSalary(salary);
         return curr;
     }
+
+    public Employee maxSalary() {
+        int ans = -1;
+        int ans_val = -1;
+        for(int key : map.keySet()){
+            if(map.get(key).getSalary() > ans_val){
+                ans_val = map.get(key).getSalary();
+                ans = key;
+            }
+        }
+        return map.get(ans);
+    }
 }

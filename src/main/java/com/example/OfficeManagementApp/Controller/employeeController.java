@@ -27,5 +27,8 @@ public class employeeController {
     public Employee updatesalary(@RequestParam("id") int empid,@RequestParam("sal") int salary){
         return emp.updateSalary(empid,salary);
     }
-
+    @GetMapping("/max-salary")
+    public Employee maxSalary(){
+        return emp.maxSalary();
+    }
 }
